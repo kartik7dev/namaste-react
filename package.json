@@ -1,0 +1,31 @@
+{
+  "name": "namastereact",
+  "version": "1.0.0",
+  "description": "This is Namaste React practiced by Kartikeyan Kothari",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kartik7dev/namaste-react.git"
+  },
+  "keywords": [],
+  "author": "Kartikeyan Kothari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kartik7dev/namaste-react/issues"
+  },
+  "homepage": "https://github.com/kartik7dev/namaste-react#readme",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
