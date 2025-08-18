@@ -1,29 +1,21 @@
-/* <div id="parent">
-*      <div id="child">
-*            <h1>I am an h1 tag</h1>
-*            <h2>I am an h2 tag</h2>
-*      </div>
-*      <div id="child">
-*            <h1>I am an h1 tag</h1>
-*            <h2>I am an h2 tag</h2>
-*      </div>
-*  </div>
-* ReactElement(Object) => HTML (Browser understands---------)
-*/
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-const parent = React.createElement('div', { id: 'parent'}, [
-        React.createElement('div', { id: 'child'}, [
-            React.createElement('h1',{}, 'This is Namaste React'),
-            React.createElement('h2',{}, 'dsafasfgasfsdf'),
-        ]),
-        React.createElement('div',{ id: 'child'}, [
-            React.createElement('h1',{}, 'I am an h1 tag'),
-            React.createElement('h2',{}, 'I am an h2 tag'),
-        ]),
-    ]
+const Title = () => (
+    <h2 className='head' tabIndex="5">
+        Namaste React using JSX element
+    </h2>
+);
+
+const HeadingComponent = () => (
+    <div id='container'>
+        {Title()}
+        <Title />
+        <Title></Title>
+        <h1 className='heading'>Namaste React Functional Component</h1>
+    </div>
 )
-console.log(parent); // javascript object
-const root  = ReactDOM.createRoot(document.getElementById('header'));
-root.render(parent); // render method converts the object to HTML element and injects it into the DOM
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(<HeadingComponent/>);
